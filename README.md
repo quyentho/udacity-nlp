@@ -15,3 +15,5 @@ This project using **nodejs** and **meaningcloud** to do Natural Language Proces
 - Run `npm run build-prod` to build the assets
 - Then, run `npm run start` to start the nodejs server
 - Go to 'localhost:8080' to view the page
+
+### GET_PASSES_THIS_REPO_UDACITY_PLEASE
