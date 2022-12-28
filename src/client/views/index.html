@@ -34,5 +34,20 @@
     <footer>
       <p>This is a footer</p>
     </footer>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          const registration =
+            navigator.serviceWorker.register("/service-worker.js");
+          if (registration.installing) {
+            console.log("Service worker installing");
+          } else if (registration.waiting) {
+            console.log("Service worker installed");
+          } else if (registration.active) {
+            console.log("Service worker active");
+          }
+        });
+      }
+    </script>
   </body>
 </html>

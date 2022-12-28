@@ -7,7 +7,7 @@ module.exports = {
   entry: "./src/client/index.js",
   output: {
     path: __dirname + "/dist",
-    filename: "index_bundle.js",
+    filename: "[name].js",
   },
   mode: "development",
   devtool: "source-map",
