@@ -5,8 +5,16 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: "./src/client/index.js",
+  output: {
+    path: __dirname + "/dist",
+    filename: "index_bundle.js",
+  },
   mode: "development",
   devtool: "source-map",
+  devServer: {
+    compress: true,
+    port: 9000,
+  },
   stats: "verbose",
   module: {
     rules: [
